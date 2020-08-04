@@ -16,8 +16,7 @@
     </header>
     <main>
       <!-- this is the table of contents, linked by anchors -->
-      <h2>Javascript</h2>
-      <p><strong>Sections</strong><br>
+      <p><strong>Javascript</strong><br>
         <a href = "#operators">Operators</a><br>
         <a href = "#grammar-syntax">Grammar & Syntax</a><br>
         <a href = "#data-types">Data Types</a><br>
@@ -27,9 +26,12 @@
         <a href = "#loops">Loops</a><br>
         <a href = "#objects">Objects</a><br>
         <a href = "#accumulator">Accumlator Pattern</a><br>
-        <a href = "#functions">Functions</a></p>
+        <a href = "#functions">Functions</a>
+        
+        <br><br>
 
-      <h2><a href = "#html">HTML</a> & <a href = "#css">CSS</a></h2>
+        <a href = "#html">HTML</a> & <a href = "#css">CSS</a>
+      </p>
       <br><br>
 
       <article id = "operators">
@@ -185,7 +187,8 @@
 
       <article id = "methods">
         <h3>Methods</h3>
-        <p>functions in code that do stuff
+        <p>
+          functions in code that do stuff
 
           .length // get the length of a string, number of characters
           "Hello".length; // 5
@@ -206,7 +209,8 @@
         </p>
 
         <h4>Array Methods</h4>
-        <p>.push(): adds an item to the end of an array. returns the new length of the array.
+        <p>
+          .push(): adds an item to the end of an array. returns the new length of the array.
 
           .pop(): removes the last item from the end of an array. returns the last item.
           
@@ -215,6 +219,126 @@
           "to change the original" is to mutate
           push and pop will mutate an array, but length will not
         </p>
+      </article>
+
+
+      <article id ="if-else">
+        <h3>If</h3>
+        <p>
+          conditional statement tells the code to perform different tasks based on 
+          different kinds of information
+
+          let userLoggedInToday = true;
+          if (userLoggedInToday) {
+            console.log("Thanks for logging in today!");
+          }
+          
+          code inside {} runs only if () is true
+        </p>
+        <h4>Else</h4>
+        <p>
+          backup plan for the code
+
+          let userLoggedInToday = false;
+          if (userLoggedInToday) {
+            // this code will not run!
+            console.log("Thanks for logging in today!");
+          } else {
+            // this code will run
+            console.log("Don't forget to log in today!");
+          }<br><br>
+          
+          <strong>else if</strong> - for multiple conditions
+        </p>
+        <h4>Boolean Coercion</h4>
+        <p>
+          if you write an if statement with an item that isn't a boolean, JavaScript will convert your data into true or false
+          // values that evaluate to false
+          false; // false itself
+          ""; // empty string
+          0; // zero
+          null;
+          undefined;
+          NaN; // Not a Number
+          anything else is true
+          
+          !! 'double bang' turns anything to a boolean.
+          !!true // true
+          !!false // false
+          !!10 // true
+          !!0 // false
+          !!(-8) // true
+          !!"hello" // true
+          !!"" // false
+          !!" " // true
+          !!undefined // false
+          !!NaN // false
+          !!null // false
+        </p>
+
+      </article>
+
+
+      <article id = "arrays">
+        <h3>Arrays</h3>
+        <p>let listOfPuppies = ["shadow", "mocha", "ranger"];
+          let emptyArray = [];
+          let puppyAges = [0, 1, 2];
+          let puppyAgeDescriptions = ["two months", "thirteen months", 2]; // we can mix strings and numbers!
+          let puppiesAndAges = [
+            ["shadow", "mocha", "ranger"],
+            [0, 1, 2],
+          ]; 
+          let emptyArray = myFavoriteFruits + myLuckyNumbers; // an empty array
+          must be structured in a particular way. The square brackets [ and ] show where the array starts and ends. A comma , separates each item in the array, but there's no comma after the last item
+          zero or more elements. Arrays can contain any data type—including other arrays
+          
+          access an item in an array using bracket notation and the index of that item
+          use square brackets with the index inside, like [2]
+          start at 0
+          
+          changing array value, access and assign
+          let dogAges = [6, 9, 10];
+          dogAges[0]; // 6
+          dogAges[0] = 7; // happy birthday to the first dog!
+          dogAges[0]; // 7
+          dogAges[3] = 5; // a fourth dog, five years old
+          dogAges; // [7, 9, 10, 5]   
+        </p>
+        <h4>Array Methods</h4>
+        <p>
+          .push(): adds an item to the end of an array. returns the new length of the array.
+
+          .pop(): removes the last item from the end of an array. returns the last item.
+          
+          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.
+          
+          "to change the original" is to mutate
+          push and pop will mutate an array, but length will not
+        </p>
+
+      </article>
+
+
+      <article id = "loops">
+
+
+      </article>
+
+
+      <article id = "objects">
+
+      </article>
+
+
+      <article id = "accumulator">
+
+      </article>
+
+
+
+      <article id = "functions">
+
       </article>
 
 

@@ -1,7 +1,9 @@
 h1{
     font-size: 36px;
     color: #ffffff;
-    background-color: #124466 ;
+    background-color: #124466;
+    text-align: center;
+    letter-spacing: 8px;
 }
 
 h2 {
