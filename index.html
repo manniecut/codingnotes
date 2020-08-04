@@ -128,6 +128,10 @@
           - don't mix ' and ", unless it has to be used inside, in which case match the wrapping
 
         </p>
+        <h4>PsuedoCoding</h4>
+        <p>
+        start by writing comments to use as a scaffolding to bring in actual code later
+        </p>
 
       </article>
 
@@ -321,25 +325,397 @@
 
 
       <article id = "loops">
+        <h3>Loops</h3>
+        <p>
+          for loop description
+          `
+          for (initialExpression; condition; incrementExpression) {
+            loop body
+          }
+          `
+          let partyPeople = ["Joe","Julie","Jasmine","Julio"];
+          for (let i = 0; i < partyPeople.length; i++) {
+            console.log(partyPeople[i] + " likes to party!");
+          }
+          `
+          let countTo = 5;
+          for (let step = 1;   step <= countTo;      step++) {
+            console.log(step);
+          }
+          Starting at step = 1
+          Check if step is less than or equal to the value of countTo (5).
+          Log the value of step.
+          Increase step by one.
+          Then repeat this code.
+          The } at the end of the loop tells the code to run the loop again until the condition is false
+          `
+          
+          initialExpression// initializes coutner, often set to i=0, i for index number of array
+          condition// if true, loop continues, if false, ends
+          increment expression, changes the value of i
+          i++ === i=i+1
+          loop body// code that runs if for is true
+          
+          watch your <= < and > >=
+          
+          if your outer loop likes this for (let i = 0; ...) your inner might need to look something like this for (let j = 0; ...)
+          
+
+        </p>
 
 
       </article>
 
 
       <article id = "objects">
+        <h3>Objects</h3>
+        <p>
+          An object holds many values and each value has a unique key
+          // an example of an object
+          let gifts = {
+            tommy: "stuffed giraffe",
+            lisa: "coloring book",
+            roberto: "baseball cap",
+            beth: "suit of armor",
+          };    //
+            key (or property): "value",
+          
+          Objects allow you to keep track of the value that belongs to each key. Then, you can retrieve a value using the name of the key.
+          
+          gifts["tommy"]; // 'stuffed giraffe'
+          
+          Objects start and end with curly brackets: the { and }. Keys must be a string data type, but they can be any string. A colon : sits between each key and the value it points to, and a comma , separates key: value pairs. values can be any data type.
+          
+          // an Object with a mix of data types
+          let actionFigure = {
+            name: "Super Awesome Guy",
+            heightInCentimeters: 10,
+            accessories: ["cape", "disguise", "laser ring"],
+            limitedEdition: true,
+          };
+          
+           you can get the values inside it using either dot notation or bracket notation
+          
+          actionFigure.name; // 'Super Awesome Guy'
+          actionFigure.limitedEdition; // true
+          
+          let categories = {
+            'best picture': 'Shrek',
+            'best director': 'Shrek 2'
+          };
+          categories['best picture']; // 'Shrek'
+          categories['best director']; // 'Shrek 2'
+          
+          // adding a new key/value pair
+          let myFamily = {
+            mom: "Cynthia",
+            dad: "Paul",
+          };
+          
+          myFamily.sister = "Lucinda"; // dot notation
+          myFamily["brother in law"] = "Merle"; // bracket notation
+          
+          update existing value
+          myFamily["brother in law"] = "Scotty"; 
+          
+          
+          objects within objects
+          let car = {
+            year: 2019,
+            price: {
+              suggested: 20000,
+              retail: 15000,
+              current: 12000,
+            },
+          };
+          
+          retrieve with double dot notation
+          console.log(car.year.retail)
+          
+          //example of arry of objects with a loop checking them
+          let partyPeople = [
+            { name: "Joe", attending: false },
+            { name: "Jasmine", attending: true },
+            { name: "Julio", attending: false },
+            { name: "Julia", attending: true },
+          ];
+          
+          // loop through each item
+          // check if the person is attending
+          // if they are attending, say they are partying
+          // otherwise, say they are burnt out
+          for (let i = 0; i < partyPeople.length; i++) {
+            if (partyPeople[i].attending) {
+              console.log(partyPeople[i].name + " is partying!");
+            } else {
+              console.log(partyPeople[i].name + " is burnt out on partying =(");
+            }
+          }
+          
+          
+        </p>
 
       </article>
 
 
       <article id = "accumulator">
+        <h3>Accumulator Pattern</h3>
+        <p> an example of the accumulator pattern
+          let countTo = 10; // how high should we count?
+          let sum = 0; // this is a place to store our sum
+          for (let i = 1; i <= countTo; i++) {
+            sum += i;
+            console.log("The current sum is: " + sum);
+          }
+          console.log("The final sum is: " + sum);
+          
+          >The current sum is: 1
+          The current sum is: 3
+          The current sum is: 6
+          The current sum is: 10
+          The current sum is: 15
+          The current sum is: 21
+          The current sum is: 28
+          The current sum is: 36
+          The current sum is: 45
+          The current sum is: 55
+          The final sum is: 55
+          
+          // an example of the accumulator pattern
+          let colors = ["red", "white", "blue"];
+          let statement = "My favorite colors are ";
+          let last = colors.pop();
+          for (let i = 0; i < colors.length; i++) {  
+            //statement = statement + (colors[i] + ", ") + " and " + last + "."
+            statement = statement + colors[i] + ", ";
+          }
+          statement = statement + "and " + last + ".";
+          
+          console.log(statement); // 'My favorite colors are red, white and blue.'
+          
+          </p>
 
       </article>
 
 
 
       <article id = "functions">
+        <h3>Functions</h3>
+        <p>
+          Write it once and run it everywhere
+
+          baked in functions
+          console.log()
+          parseint()
+          .toUpperCase()
+          .trim()
+          .pop()
+          
+          
+                      identifier
+          decleration   |
+             |          |
+          function logHello() {
+            console.log("Hello from a function!");
+          }            |
+                      body
+          we run the function by putting () after the name. arguments are  inserted as strings between the (). body of the function, encapsulated by curly brackets {}
+          When we declare a function, we are just describing how we want it to behave. To actually trigger the function, you have to invoke it.
+          
+                                parameter (placeholder for input)
+                                  |
+          function favoriteFood(food) {
+            console.log("My favorite food is " + food);
+          }
+          `
+          function add(num1, num2) {
+            console.log(num1 + num2);
+          }
+          let myNumber = 1;
+          let yourNumber = 4;
+          add(1, 4);
+          add(myNumber, yourNumber);
+          `````````````````````````````
+          ``return //  use it in front of the final result that you want to share outside of the function
+          as opposed to console.log(), which only shows in console and remains undefined, return allows the result to be referenced within the program
+          
+          function returnsTen() {
+            return 10;
+          }
+          let eleven = returnsTen() + 1; // becomes 10 + 1
+          console.log(eleven); // 11
+          
+          Whenever JavaScript sees return in a function, it:
+          
+          stops running the code in that function
+          takes the value to the right of return
+          swaps in the return value where the function was called
+          
+          function add(num1, num2) {
+            if (num1 < 0 || num2 < 0) {
+              return "Only positive numbers please!";
+            }
+            return num1 + num2;
+          }
+          console.log(add(1, 4));
+          console.log(add(-1, 4));
+          //You can use return in multiple places in your function and a good example of that is if you include a conditional statement inside the body.
+        </p>
+      
 
       </article>
+
+      <br><br><br>
+      <article id = "html">
+        <h3>HTML</h3>
+        <p>
+          This link will automatically open the user's default email program with the TO field already filled out with the proper email address.
+
+          < a href="mailto:hello@yoursite.com">Email Me< /a>
+          
+          
+          
+          Auto populate the Subject field in the email program. Spaces in the subject will typically work, but to be sure, you can replace spaces with "%20".
+          
+          < a href="mailto:hello@yoursite.com?subject=Email%20Subject%20Here">Email Me< /a>
+          
+          
+          
+          Adding CC (Carbon Copy) and BCC (Blind Carbon Copy) can also be added as parameters.
+          
+          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=onelastperson@theirsite.com
+          &subject=Big%20News">Email Me< /a>
+          
+          
+          
+          
+          Providing pre-written Body Text to your email can be useful in certain situations. ("You are hired!") 😂
+          
+          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com
+          &bcc=onelastperson@theirsite.com &subject=Big%20News &body=We%20want%20to%20hire%20you!">Email Me< /a>
+          
+          To force the telephone link to make the call to the number when clicked, which is great for mobile devices, use this code.
+          
+          // HTML CODE 
+            < p>< a href="tel:555-555-5555">
+          555-555-5555< /a>< /p>
+          
+          // CSS CODE  
+            a[href^="tel:"]{
+              color: pink;
+            }
+          
+          Certain web files will open within the browser window when you link to them. These include web files (.html & .css) and images (jpg, .gif, and .png).
+          
+              < p>< a href="another-page.html">Open another 
+              HTML page in Browser< /a>< /p>
+              < p> < a href="images/chess.jpg">Open Image in
+              Browser< /a>< /p>
+              < p>< a href="style.css">Open CSS in
+              Browser< /a>< /p>
+              
+          When non-web files (.zip, pdf, .doc) are linked, those will be downloaded to the user’s computer. If you want the link to download web files, then the attribute download can be added to the link to specify that the file should be downloaded.
+          
+          Since all files need to follow specific filename rules which can appear messy with the hyphens, etc, the downloaded file can be auto-renamed to use a more friendly filename upon download.
+          
+          < p>Download with Original Filename: 
+          < a href="pdf-files/pdf-sample-243.pdf"
+           download>Download: Sample PDF File< /a>< /p>
+          
+          < p>Download with New Filename:
+          < a href="pdf-files/pdf-sample-243.pdf"
+          download="SamplePDF File.pdf">
+          
+          < /p>
+      </article>
+
+      <article id = "css">
+        <h3>CSS</h3>
+        <p>
+          h1 {<br>
+          font-family: 'Times New Roman';  //quotes for spaces<br>
+          font-size: 72px;<br>
+          color:firebrick;<br>
+        }<br>
+        <br>
+        p {<br>
+          font-family: Arial;<br>
+          font-size: 18px;<br>
+          color: darkslategrey;<br>
+        }<br>
+        <br>
+        <br>
+        selector          value<br>
+          |    property   |<br>
+          |      |        |<br>
+          p  {font-size: 16px;}         -- rule<br>
+             |----------------|<br>
+                    |<br>
+                 decleration   <br>
+                 <br>
+                 <br>
+        font-family<br>
+        font-size<br>
+        color<br>
+        <br>
+        font-weight: (possible values of 100-900 if available);<br>
+        letter-spacing: 1px; (-3px will pull the letters together)<br>
+        line-height: 20px; (Space between lines of text)<br>
+        text-align: center; (left, right, justified)<br>
+        text-decoration: underline; (overline, line-through)<br>
+        text-transform: capitalize; (uppercase, lowercase)<br>
+        <br>
+        If you wish to style the email links differently than the rest of your page links, a unique pseudo class is available to target links that start with "mailto:".
+        <br><br>
+        //  CSS STYLES <br>
+         //  Normal Link <br>
+          a {<br>
+            font-family: arial;<br>
+            text-decoration: none;<br>
+            color: blue;<br>
+          }<br>
+          <br>
+         //  Email Link <br>
+          a[href^="mailto:"]{<br>
+              color: red;<br>
+          }<br>
+          <br>
+          <br>
+        CSS allows you to supply the keyword !important in order to make a rule, which might otherwise be lower in the cascade, override others. Here's an example:
+        <br><br>
+        p {<br>
+          color: red !important;<br>
+        }<br>
+        <br>
+        <br>
+        <br>
+        There are four pseudo-class selectors for anchor elements:<br>
+        <br>
+        a:link: This is the normal state of a text link.<br>
+        a:visited: This is the state of a text link that has been visited already by the current web browser.
+        <br>a:hover: This creates the roll-over state for when the user's mouse rolls over (aka hovers over) a link.
+        <br>a:active: This affects the state of the link while the user is actively clicking on it.
+        <br>Due to the cascading aspect of CSS, the order these pseudo-classes are written within the CSS page is very important.
+        <br>
+        They must be written in this order:<br>
+        <br>
+        link<br>
+        visited<br>
+        hover<br>
+        active<br>
+        
+
+        </p>
+      </article>
+
+
+    </main>
+
+    <footer>
+      <p>Mannie Cut's Notes 2020</p>
+    </footer>
+    </body>
+</html>
 
 
         
