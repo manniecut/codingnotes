@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width">
-	  <title>repl.it</title>
+	  <title>Coding Notes</title>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 	  <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -27,9 +27,10 @@
         <a href = "#loops">Loops</a><br>
         <a href = "#objects">Objects</a><br>
         <a href = "#accumulator">Accumlator Pattern</a><br>
-        <a href = "#functions">Functions</a><br></p>
-      <br>
+        <a href = "#functions">Functions</a></p>
+
       <h2><a href = "#html">HTML</a> & <a href = "#css">CSS</a></h2>
+      <br><br>
 
       <article id = "operators">
         <h3>Operators</h3>
@@ -52,6 +53,8 @@
           line comment */<br><br>
 
         </p>
+
+
         <h4>Relational Operators</h4>
         <p>
           <strong>===</strong> strict, comparison operator, true or false<br>
@@ -67,4 +70,153 @@
 
           <strong><, >, <=, >=</strong> less than, greater than, '' or equal to<br><br>
           
-          <strong>!==</strong> not equal, opposite of ===</p>
+          <strong>!==</strong> not equal, opposite of ===
+        </p>
+
+
+
+
+        <h4>Logical Operators</h4>
+        <p>
+          combine boolean values so that you can express more complex ideas
+
+          && and, evaluates to true if the values on both are true
+          || or,  evaluates to true if either one is true
+          !  not, works on just one value
+          
+          let userLoggedIn = true;
+          let userPurchasedItem = false;
+          // test if both values are true
+          userLoggedIn && userPurchasedItem; // => false
+          // test if either value is true
+          userLoggedIn || userPurchasedItem; // => true
+          // invert the value of a variable
+          !userLoggedIn; // => false
+          !userPurchasedItem; // => true
+          
+          short-circuiting
+          code stops early if the first value of the || operator is truthy. 
+          returns the first truthy value, or the last value if no values are truthy
+          code stops early if the first value of the && operator is falsy. 
+          returns the first falsy value, or the last value if no values are falsy.
+
+        </p>
+
+
+
+
+
+        <h4>Increment and Decrement</h4>
+        <p>
+          var++ //adds one to the number currently stored in the variable
+          var-- // subtracts one from variable
+          var+= 2 // adds 2 each time
+          
+          
+
+        </p>
+
+      </article>
+
+      <article id = "grammar-syntax">
+        <h3>Grammar & Syntax</h3>
+        <p>
+          - case sensitive
+          - camelCase
+          - don't mix ' and ", unless it has to be used inside, in which case match the wrapping
+
+        </p>
+
+      </article>
+
+
+      <article id = "data-types">
+        <h3>Data Types</h3>
+        <p>
+          Strings - text or numbers in " " or ' '
+          // declare a string with quotes
+          let city = "Seattle";
+          let state = "Washington"; 
+          
+          Numbers - Integers (whole numbers) and floating point decimal numbers (2.345)
+          
+          Booleans - True or False
+          // declare a boolean
+          let isLoggedIn = true;
+          // evaluate a boolean
+          if (isLoggedIn) {
+            console.log("The user is logged in.");
+          Pronounced 'not' or 'bang', ! inverts a boolean value. 
+          This means that !false turns into true, and !true turns into false.
+          
+          Null - is a data type that's used to indicate that a variable has no value. 
+          null is used as the default value when other data is not available. 
+          Even though null is a distinct data type, typeof will tell you that it's an object
+          
+          Undefined - is a special value that means that a variable was never defined. 
+          null value means that the developer decided that the value was empty on purpose. 
+          An undefined value means that the value was never assigned. 
+          you shouldn't assign a variable undefined. 
+          If you want to represent the absence of a value in your code, use null instead
+          let example = null;
+          example; // null
+          let magicWord;
+          magicWord; // undefined
+        </p>
+
+
+        <h4>Converting Data Types</h4>
+        <p>
+            If you combine a number with a string using the + operator, the resulting value will be a string. This process of automatic conversion is called coercion. Only +
+
+            parseInt() parses a string and returns an integer. But notably, parseInt returns only integers, like -5, 0, 111, 22,847, etc. It doesn't deal with decimals, like 1.618. But that's where parseFloat() comes in.
+            
+            toString() which turns a number into a string
+            let age = 101;
+            let ageString = age.toString();
+            typeof age; // 'number'
+            typeof ageString; // 'string'
+            
+
+        </p>
+
+      </article>
+
+
+      <article id = "methods">
+        <h3>Methods</h3>
+        <p>functions in code that do stuff
+
+          .length // get the length of a string, number of characters
+          "Hello".length; // 5
+          let longWord = "supercalifragilisticexpialidocious";
+          longWord.length; // 34
+          not really a method because it's not manipulating
+          
+          .toLowerCase() : This returns a string with all the letters lowercase.
+          
+          .replace("part of string", "new string") : This replaces part of a string with another string.
+          
+          .toUpperCase() : This returns a string with all the letters capitalized.
+          
+          .trim() : This removes whitespace (spaces, tabs, etc.) at the beginning and end of a string.
+          
+          because there's no = operator to reassign the value, 
+          methods usually don't change the original value of the variable
+        </p>
+
+        <h4>Array Methods</h4>
+        <p>.push(): adds an item to the end of an array. returns the new length of the array.
+
+          .pop(): removes the last item from the end of an array. returns the last item.
+          
+          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.
+          
+          "to change the original" is to mutate
+          push and pop will mutate an array, but length will not
+        </p>
+      </article>
+
+
+        
+        
