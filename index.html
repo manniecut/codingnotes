@@ -80,27 +80,27 @@
 
         <h4>Logical Operators</h4>
         <p>
-          combine boolean values so that you can express more complex ideas
-
-          && and, evaluates to true if the values on both are true
-          || or,  evaluates to true if either one is true
-          !  not, works on just one value
-          
-          let userLoggedIn = true;
-          let userPurchasedItem = false;
-          // test if both values are true
-          userLoggedIn && userPurchasedItem; // => false
-          // test if either value is true
-          userLoggedIn || userPurchasedItem; // => true
-          // invert the value of a variable
-          !userLoggedIn; // => false
-          !userPurchasedItem; // => true
-          
-          short-circuiting
-          code stops early if the first value of the || operator is truthy. 
-          returns the first truthy value, or the last value if no values are truthy
-          code stops early if the first value of the && operator is falsy. 
-          returns the first falsy value, or the last value if no values are falsy.
+          combine boolean values so that you can express more complex ideas<br>
+          <br>
+          && and, evaluates to true if the values on both are true<br>
+          || or,  evaluates to true if either one is true<br>
+          !  not, works on just one value<br>
+          <br>
+          let userLoggedIn = true;<br>
+          let userPurchasedItem = false;<br>
+          // test if both values are true<br>
+          userLoggedIn && userPurchasedItem; // => false<br>
+          // test if either value is true<br>
+          userLoggedIn || userPurchasedItem; // => true<br>
+          // invert the value of a variable<br>
+          !userLoggedIn; // => false<br>
+          !userPurchasedItem; // => true<br>
+          <br>
+          short-circuiting<br>
+          code stops early if the first value of the || operator is truthy. <br>
+          returns the first truthy value, or the last value if no values are truthy<br>
+          code stops early if the first value of the && operator is falsy. <br>
+          returns the first falsy value, or the last value if no values are falsy.<br>
 
         </p>
 
@@ -110,9 +110,9 @@
 
         <h4>Increment and Decrement</h4>
         <p>
-          var++ //adds one to the number currently stored in the variable
-          var-- // subtracts one from variable
-          var+= 2 // adds 2 each time
+          var++ //adds one to the number currently stored in the variable<br>
+          var-- // subtracts one from variable<br>
+          var+= 2 // adds 2 each time<br>
           
           
 
@@ -123,9 +123,9 @@
       <article id = "grammar-syntax">
         <h3>Grammar & Syntax</h3>
         <p>
-          - case sensitive
-          - camelCase
-          - don't mix ' and ", unless it has to be used inside, in which case match the wrapping
+          - case sensitive<br>
+          - camelCase<br>
+          - don't mix ' and ", unless it has to be used inside, in which case match the wrapping<br>
 
         </p>
         <h4>PsuedoCoding</h4>
@@ -139,49 +139,49 @@
       <article id = "data-types">
         <h3>Data Types</h3>
         <p>
-          Strings - text or numbers in " " or ' '
-          // declare a string with quotes
-          let city = "Seattle";
-          let state = "Washington"; 
-          
-          Numbers - Integers (whole numbers) and floating point decimal numbers (2.345)
-          
-          Booleans - True or False
-          // declare a boolean
-          let isLoggedIn = true;
-          // evaluate a boolean
-          if (isLoggedIn) {
-            console.log("The user is logged in.");
-          Pronounced 'not' or 'bang', ! inverts a boolean value. 
-          This means that !false turns into true, and !true turns into false.
-          
-          Null - is a data type that's used to indicate that a variable has no value. 
-          null is used as the default value when other data is not available. 
-          Even though null is a distinct data type, typeof will tell you that it's an object
-          
-          Undefined - is a special value that means that a variable was never defined. 
-          null value means that the developer decided that the value was empty on purpose. 
-          An undefined value means that the value was never assigned. 
-          you shouldn't assign a variable undefined. 
-          If you want to represent the absence of a value in your code, use null instead
-          let example = null;
-          example; // null
-          let magicWord;
-          magicWord; // undefined
+          Strings - text or numbers in " " or ' '<br>
+          // declare a string with quotes<br>
+          let city = "Seattle";<br>
+          let state = "Washington"; <br>
+          <br>
+          Numbers - Integers (whole numbers) and floating point decimal numbers (2.345)<br>
+          <br>
+          Booleans - True or False<br>
+          // declare a boolean<br>
+          let isLoggedIn = true;<br>
+          // evaluate a boolean<br>
+          if (isLoggedIn) {<br>
+            console.log("The user is logged in.");<br>
+          Pronounced 'not' or 'bang', ! inverts a boolean value. <br>
+          This means that !false turns into true, and !true turns into false.<br>
+          <br>
+          Null - is a data type that's used to indicate that a variable has no value. <br>
+          null is used as the default value when other data is not available. <br>
+          Even though null is a distinct data type, typeof will tell you that it's an object<br>
+          <br>
+          Undefined - is a special value that means that a variable was never defined. <br>
+          null value means that the developer decided that the value was empty on purpose. <br>
+          An undefined value means that the value was never assigned. <br>
+          you shouldn't assign a variable undefined. <br>
+          If you want to represent the absence of a value in your code, use null instead<br>
+          let example = null;<br>
+          example; // null<br>
+          let magicWord;<br>
+          magicWord; // undefined<br>
         </p>
 
 
         <h4>Converting Data Types</h4>
         <p>
-            If you combine a number with a string using the + operator, the resulting value will be a string. This process of automatic conversion is called coercion. Only +
-
-            parseInt() parses a string and returns an integer. But notably, parseInt returns only integers, like -5, 0, 111, 22,847, etc. It doesn't deal with decimals, like 1.618. But that's where parseFloat() comes in.
-            
-            toString() which turns a number into a string
-            let age = 101;
-            let ageString = age.toString();
-            typeof age; // 'number'
-            typeof ageString; // 'string'
+            If you combine a number with a string using the + operator, the resulting value will be a string. This process of automatic conversion is called coercion. Only +<br>
+            <br>
+            parseInt() parses a string and returns an integer. But notably, parseInt returns only integers, like -5, 0, 111, 22,847, etc. It doesn't deal with decimals, like 1.618. But that's where parseFloat() comes in.<br>
+            <br>
+            toString() which turns a number into a string<br>
+            let age = 101;<br>
+            let ageString = age.toString();<br>
+            typeof age; // 'number'<br>
+            typeof ageString; // 'string'<br>
             
 
         </p>
@@ -192,36 +192,36 @@
       <article id = "methods">
         <h3>Methods</h3>
         <p>
-          functions in code that do stuff
+          functions in code that do stuff<br>
 
-          .length // get the length of a string, number of characters
-          "Hello".length; // 5
-          let longWord = "supercalifragilisticexpialidocious";
-          longWord.length; // 34
-          not really a method because it's not manipulating
-          
-          .toLowerCase() : This returns a string with all the letters lowercase.
-          
-          .replace("part of string", "new string") : This replaces part of a string with another string.
-          
-          .toUpperCase() : This returns a string with all the letters capitalized.
-          
-          .trim() : This removes whitespace (spaces, tabs, etc.) at the beginning and end of a string.
-          
-          because there's no = operator to reassign the value, 
-          methods usually don't change the original value of the variable
+          .length // get the length of a string, number of characters<br>
+          "Hello".length; // 5<br>
+          let longWord = "supercalifragilisticexpialidocious";<br>
+          longWord.length; // 34<br>
+          not really a method because it's not manipulating<br>
+          <br>
+          .toLowerCase() : This returns a string with all the letters lowercase.<br>
+          <br>
+          .replace("part of string", "new string") : This replaces part of a string with another string.<br>
+          <br>
+          .toUpperCase() : This returns a string with all the letters capitalized.<br>
+          <br>
+          .trim() : This removes whitespace (spaces, tabs, etc.) at the beginning and end of a string.<br>
+          <br>
+          because there's no = operator to reassign the value, <br>
+          methods usually don't change the original value of the variable<br>
         </p>
 
         <h4>Array Methods</h4>
         <p>
-          .push(): adds an item to the end of an array. returns the new length of the array.
-
-          .pop(): removes the last item from the end of an array. returns the last item.
-          
-          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.
-          
-          "to change the original" is to mutate
-          push and pop will mutate an array, but length will not
+          .push(): adds an item to the end of an array. returns the new length of the array.<br>
+          <br>
+          .pop(): removes the last item from the end of an array. returns the last item.<br>
+          <br>
+          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.<br>
+          <br>
+          "to change the original" is to mutate<br>
+          push and pop will mutate an array, but length will not<br>
         </p>
       </article>
 
@@ -229,55 +229,55 @@
       <article id ="if-else">
         <h3>If</h3>
         <p>
-          conditional statement tells the code to perform different tasks based on 
-          different kinds of information
-
-          let userLoggedInToday = true;
-          if (userLoggedInToday) {
-            console.log("Thanks for logging in today!");
-          }
-          
-          code inside {} runs only if () is true
+          conditional statement tells the code to perform different tasks based on <br>
+          different kinds of information<br>
+          <br>
+          let userLoggedInToday = true;<br>
+          if (userLoggedInToday) {<br>
+            console.log("Thanks for logging in today!");<br>
+          }<br>
+          <br>
+          code inside {} runs only if () is true<br>
         </p>
         <h4>Else</h4>
         <p>
-          backup plan for the code
-
-          let userLoggedInToday = false;
-          if (userLoggedInToday) {
-            // this code will not run!
-            console.log("Thanks for logging in today!");
-          } else {
-            // this code will run
-            console.log("Don't forget to log in today!");
+          backup plan for the code<br>
+          <br>
+          let userLoggedInToday = false;<br>
+          if (userLoggedInToday) {<br>
+            // this code will not run!<br>
+            console.log("Thanks for logging in today!");<br>
+          } else {<br>
+            // this code will run<br>
+            console.log("Don't forget to log in today!");<br>
           }<br><br>
           
           <strong>else if</strong> - for multiple conditions
         </p>
         <h4>Boolean Coercion</h4>
         <p>
-          if you write an if statement with an item that isn't a boolean, JavaScript will convert your data into true or false
-          // values that evaluate to false
-          false; // false itself
-          ""; // empty string
-          0; // zero
-          null;
-          undefined;
-          NaN; // Not a Number
-          anything else is true
-          
-          !! 'double bang' turns anything to a boolean.
-          !!true // true
-          !!false // false
-          !!10 // true
-          !!0 // false
-          !!(-8) // true
-          !!"hello" // true
-          !!"" // false
-          !!" " // true
-          !!undefined // false
-          !!NaN // false
-          !!null // false
+          if you write an if statement with an item that isn't a boolean, JavaScript will convert your data into true or false<br>
+          // values that evaluate to false<br>
+          false; // false itself<br>
+          ""; // empty string<br>
+          0; // zero<br>
+          null;<br>
+          undefined;<br>
+          NaN; // Not a Number<br>
+          anything else is true<br>
+          <br>
+          !! 'double bang' turns anything to a boolean.<br>
+          !!true // true<br>
+          !!false // false<br>
+          !!10 // true<br>
+          !!0 // false<br>
+          !!(-8) // true<br>
+          !!"hello" // true<br>
+          !!"" // false<br>
+          !!" " // true<br>
+          !!undefined // false<br>
+          !!NaN // false<br>
+          !!null // false<br>
         </p>
 
       </article>
@@ -285,40 +285,41 @@
 
       <article id = "arrays">
         <h3>Arrays</h3>
-        <p>let listOfPuppies = ["shadow", "mocha", "ranger"];
-          let emptyArray = [];
-          let puppyAges = [0, 1, 2];
-          let puppyAgeDescriptions = ["two months", "thirteen months", 2]; // we can mix strings and numbers!
-          let puppiesAndAges = [
-            ["shadow", "mocha", "ranger"],
-            [0, 1, 2],
-          ]; 
-          let emptyArray = myFavoriteFruits + myLuckyNumbers; // an empty array
-          must be structured in a particular way. The square brackets [ and ] show where the array starts and ends. A comma , separates each item in the array, but there's no comma after the last item
-          zero or more elements. Arrays can contain any data type—including other arrays
-          
-          access an item in an array using bracket notation and the index of that item
-          use square brackets with the index inside, like [2]
-          start at 0
-          
-          changing array value, access and assign
-          let dogAges = [6, 9, 10];
-          dogAges[0]; // 6
-          dogAges[0] = 7; // happy birthday to the first dog!
-          dogAges[0]; // 7
-          dogAges[3] = 5; // a fourth dog, five years old
-          dogAges; // [7, 9, 10, 5]   
+        <p>
+          let listOfPuppies = ["shadow", "mocha", "ranger"];<br>
+          let emptyArray = [];<br>
+          let puppyAges = [0, 1, 2];<br>
+          let puppyAgeDescriptions = ["two months", "thirteen months", 2]; // we can mix strings and numbers!<br>
+          let puppiesAndAges = [<br>
+            ["shadow", "mocha", "ranger"],<br>
+            [0, 1, 2],<br>
+          ]; <br>
+          let emptyArray = myFavoriteFruits + myLuckyNumbers; // an empty array<br>
+          must be structured in a particular way. The square brackets [ and ] show where the array starts and ends. A comma , separates each item in the array, but there's no comma after the last item<br>
+          zero or more elements. Arrays can contain any data type—including other arrays<br>
+          <br>
+          access an item in an array using bracket notation and the index of that item<br>
+          use square brackets with the index inside, like [2]<br>
+          start at 0<br>
+          <br>
+          changing array value, access and assign<br>
+          let dogAges = [6, 9, 10];<br>
+          dogAges[0]; // 6<br>
+          dogAges[0] = 7; // happy birthday to the first dog!<br>
+          dogAges[0]; // 7<br>
+          dogAges[3] = 5; // a fourth dog, five years old<br>
+          dogAges; // [7, 9, 10, 5]   <br>
         </p>
         <h4>Array Methods</h4>
         <p>
-          .push(): adds an item to the end of an array. returns the new length of the array.
-
-          .pop(): removes the last item from the end of an array. returns the last item.
-          
-          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.
-          
-          "to change the original" is to mutate
-          push and pop will mutate an array, but length will not
+          .push(): adds an item to the end of an array. returns the new length of the array.<br>
+          <br>
+          .pop(): removes the last item from the end of an array. returns the last item.<br>
+          <br>
+          .length: Just like the string tool .length, this gives the length of the array—in other words, the number of items. You'll notice that .length doesn't need parentheses. That's because it's technically a property and not a method.<br>
+          <br>
+          "to change the original" is to mutate<br>
+          push and pop will mutate an array, but length will not<br>
         </p>
 
       </article>
@@ -327,38 +328,38 @@
       <article id = "loops">
         <h3>Loops</h3>
         <p>
-          for loop description
-          `
-          for (initialExpression; condition; incrementExpression) {
-            loop body
-          }
-          `
-          let partyPeople = ["Joe","Julie","Jasmine","Julio"];
-          for (let i = 0; i < partyPeople.length; i++) {
-            console.log(partyPeople[i] + " likes to party!");
-          }
-          `
-          let countTo = 5;
-          for (let step = 1;   step <= countTo;      step++) {
-            console.log(step);
-          }
-          Starting at step = 1
-          Check if step is less than or equal to the value of countTo (5).
-          Log the value of step.
-          Increase step by one.
-          Then repeat this code.
-          The } at the end of the loop tells the code to run the loop again until the condition is false
-          `
-          
-          initialExpression// initializes coutner, often set to i=0, i for index number of array
-          condition// if true, loop continues, if false, ends
-          increment expression, changes the value of i
-          i++ === i=i+1
-          loop body// code that runs if for is true
-          
-          watch your <= < and > >=
-          
-          if your outer loop likes this for (let i = 0; ...) your inner might need to look something like this for (let j = 0; ...)
+          for loop description<br>
+          <br>
+          for (initialExpression; condition; incrementExpression) {<br>
+            loop body<br>
+          }<br>
+          <br>
+          let partyPeople = ["Joe","Julie","Jasmine","Julio"];<br>
+          for (let i = 0; i < partyPeople.length; i++) {<br>
+            console.log(partyPeople[i] + " likes to party!");<br>
+          }<br>
+          <br>
+          let countTo = 5;<br>
+          for (let step = 1;   step <= countTo;      step++) {<br>
+            console.log(step);<br>
+          }<br>
+          Starting at step = 1<br>
+          Check if step is less than or equal to the value of countTo (5).<br>
+          Log the value of step.<br>
+          Increase step by one.<br>
+          Then repeat this code.<br>
+          The } at the end of the loop tells the code to run the loop again until the condition is false<br>
+          <br>
+          <br>
+          initialExpression// initializes coutner, often set to i=0, i for index number of array<br>
+          condition// if true, loop continues, if false, ends<br>
+          increment expression, changes the value of i<br>
+          i++ === i=i+1<br>
+          loop body// code that runs if for is true<br>
+          <br>
+          watch your <= < and > >=<br>
+          <br>
+          if your outer loop likes this for (let i = 0; ...) your inner might need to look something like this for (let j = 0; ...)<br>
           
 
         </p>
@@ -370,88 +371,88 @@
       <article id = "objects">
         <h3>Objects</h3>
         <p>
-          An object holds many values and each value has a unique key
-          // an example of an object
-          let gifts = {
-            tommy: "stuffed giraffe",
-            lisa: "coloring book",
-            roberto: "baseball cap",
-            beth: "suit of armor",
-          };    //
-            key (or property): "value",
-          
-          Objects allow you to keep track of the value that belongs to each key. Then, you can retrieve a value using the name of the key.
-          
-          gifts["tommy"]; // 'stuffed giraffe'
-          
-          Objects start and end with curly brackets: the { and }. Keys must be a string data type, but they can be any string. A colon : sits between each key and the value it points to, and a comma , separates key: value pairs. values can be any data type.
-          
-          // an Object with a mix of data types
-          let actionFigure = {
-            name: "Super Awesome Guy",
-            heightInCentimeters: 10,
-            accessories: ["cape", "disguise", "laser ring"],
-            limitedEdition: true,
-          };
-          
-           you can get the values inside it using either dot notation or bracket notation
-          
-          actionFigure.name; // 'Super Awesome Guy'
-          actionFigure.limitedEdition; // true
-          
-          let categories = {
-            'best picture': 'Shrek',
-            'best director': 'Shrek 2'
-          };
-          categories['best picture']; // 'Shrek'
-          categories['best director']; // 'Shrek 2'
-          
-          // adding a new key/value pair
-          let myFamily = {
-            mom: "Cynthia",
-            dad: "Paul",
-          };
-          
-          myFamily.sister = "Lucinda"; // dot notation
-          myFamily["brother in law"] = "Merle"; // bracket notation
-          
-          update existing value
-          myFamily["brother in law"] = "Scotty"; 
-          
-          
-          objects within objects
-          let car = {
-            year: 2019,
-            price: {
-              suggested: 20000,
-              retail: 15000,
-              current: 12000,
-            },
-          };
-          
-          retrieve with double dot notation
-          console.log(car.year.retail)
-          
-          //example of arry of objects with a loop checking them
-          let partyPeople = [
-            { name: "Joe", attending: false },
-            { name: "Jasmine", attending: true },
-            { name: "Julio", attending: false },
-            { name: "Julia", attending: true },
-          ];
-          
-          // loop through each item
-          // check if the person is attending
-          // if they are attending, say they are partying
-          // otherwise, say they are burnt out
-          for (let i = 0; i < partyPeople.length; i++) {
-            if (partyPeople[i].attending) {
-              console.log(partyPeople[i].name + " is partying!");
-            } else {
-              console.log(partyPeople[i].name + " is burnt out on partying =(");
-            }
-          }
-          
+          An object holds many values and each value has a unique key<br>
+          // an example of an object<br>
+          let gifts = {<br>
+            tommy: "stuffed giraffe",<br>
+            lisa: "coloring book",<br>
+            roberto: "baseball cap",<br>
+            beth: "suit of armor",<br>
+          };    //<br>
+            key (or property): "value",<br>
+            <br>
+          Objects allow you to keep track of the value that belongs to each key. Then, you can retrieve a value using the name of the key.<br>
+          <br>
+          gifts["tommy"]; // 'stuffed giraffe'<br>
+          <br>
+          Objects start and end with curly brackets: the { and }. Keys must be a string data type, but they can be any string. A colon : sits between each key and the value it points to, and a comma , separates key: value pairs. values can be any data type.<br>
+          <br>
+          // an Object with a mix of data types<br>
+          let actionFigure = {<br>
+            name: "Super Awesome Guy",<br>
+            heightInCentimeters: 10,<br>
+            accessories: ["cape", "disguise", "laser ring"],<br>
+            limitedEdition: true,<br>
+          };<br>
+          <br>
+           you can get the values inside it using either dot notation or bracket notation<br>
+           <br>
+          actionFigure.name; // 'Super Awesome Guy'<br>
+          actionFigure.limitedEdition; // true<br>
+          <br>
+          let categories = {<br>
+            'best picture': 'Shrek',<br>
+            'best director': 'Shrek 2'<br>
+          };<br>
+          categories['best picture']; // 'Shrek'<br>
+          categories['best director']; // 'Shrek 2'<br>
+          <br>
+          // adding a new key/value pair<br>
+          let myFamily = {<br>
+            mom: "Cynthia",<br>
+            dad: "Paul",<br>
+          };<br>
+          <br>
+          myFamily.sister = "Lucinda"; // dot notation<br>
+          myFamily["brother in law"] = "Merle"; // bracket notation<br>
+          <br>
+          update existing value<br>
+          myFamily["brother in law"] = "Scotty"; <br>
+          <br>
+          <br>
+          objects within objects<br>
+          let car = {<br>
+            year: 2019,<br>
+            price: {<br>
+              suggested: 20000,<br>
+              retail: 15000,<br>
+              current: 12000,<br>
+            },<br>
+          };<br>
+          <br>
+          retrieve with double dot notation<br>
+          console.log(car.year.retail)<br>
+          <br>
+          //example of arry of objects with a loop checking them<br>
+          let partyPeople = [<br>
+            { name: "Joe", attending: false },<br>
+            { name: "Jasmine", attending: true },<br>
+            { name: "Julio", attending: false },<br>
+            { name: "Julia", attending: true },<br>
+          ];<br>
+          <br>
+          // loop through each item<br>
+          // check if the person is attending<br>
+          // if they are attending, say they are partying<br>
+          // otherwise, say they are burnt out<br>
+          for (let i = 0; i < partyPeople.length; i++) {<br>
+            if (partyPeople[i].attending) {<br>
+              console.log(partyPeople[i].name + " is partying!");<br>
+            } else {<br>
+              console.log(partyPeople[i].name + " is burnt out on partying =(");<br>
+            }<br>
+          }<br>
+          <br>
           
         </p>
 
@@ -460,38 +461,39 @@
 
       <article id = "accumulator">
         <h3>Accumulator Pattern</h3>
-        <p> an example of the accumulator pattern
-          let countTo = 10; // how high should we count?
-          let sum = 0; // this is a place to store our sum
-          for (let i = 1; i <= countTo; i++) {
-            sum += i;
-            console.log("The current sum is: " + sum);
-          }
-          console.log("The final sum is: " + sum);
-          
-          >The current sum is: 1
-          The current sum is: 3
-          The current sum is: 6
-          The current sum is: 10
-          The current sum is: 15
-          The current sum is: 21
-          The current sum is: 28
-          The current sum is: 36
-          The current sum is: 45
-          The current sum is: 55
-          The final sum is: 55
-          
-          // an example of the accumulator pattern
-          let colors = ["red", "white", "blue"];
-          let statement = "My favorite colors are ";
-          let last = colors.pop();
-          for (let i = 0; i < colors.length; i++) {  
-            //statement = statement + (colors[i] + ", ") + " and " + last + "."
-            statement = statement + colors[i] + ", ";
-          }
-          statement = statement + "and " + last + ".";
-          
-          console.log(statement); // 'My favorite colors are red, white and blue.'
+        <p> 
+          an example of the accumulator pattern<br>
+          let countTo = 10; // how high should we count?<br>
+          let sum = 0; // this is a place to store our sum<br>
+          for (let i = 1; i <= countTo; i++) {<br>
+            sum += i;<br>
+            console.log("The current sum is: " + sum);<br>
+          }<br>
+          console.log("The final sum is: " + sum);<br>
+          <br>
+          >The current sum is: 1<br>
+          The current sum is: 3<br>
+          The current sum is: 6<br>
+          The current sum is: 10<br>
+          The current sum is: 15<br>
+          The current sum is: 21<br>
+          The current sum is: 28<br>
+          The current sum is: 36<br>
+          The current sum is: 45<br>
+          The current sum is: 55<br>
+          The final sum is: 55<br>
+          <br>
+          // an example of the accumulator pattern<br>
+          let colors = ["red", "white", "blue"];<br>
+          let statement = "My favorite colors are ";<br>
+          let last = colors.pop();<br>
+          for (let i = 0; i < colors.length; i++) {  <br>
+            //statement = statement + (colors[i] + ", ") + " and " + last + "."<br>
+            statement = statement + colors[i] + ", ";<br>
+          }<br>
+          statement = statement + "and " + last + ".";<br>
+          <br>
+          console.log(statement); // 'My favorite colors are red, white and blue.'<br>
           
           </p>
 
@@ -502,64 +504,66 @@
       <article id = "functions">
         <h3>Functions</h3>
         <p>
-          Write it once and run it everywhere
+          Write it once and run it everywhere<br>
+          <br>
+          baked in functions<br>
+          console.log()<br>
+          parseint()<br>
+          .toUpperCase()<br>
+          .trim()<br>
+          .pop()<br>
+          <br>
+          <br>
+                      identifier<br>
+          decleration   |<br>
+             |          |<br>
+          function logHello() {<br>
+            console.log("Hello from a function!");<br>
+          }            |<br>
+                      body<br>
+          we run the function by putting () after the name. arguments are  inserted as strings between the (). body of the function, encapsulated by curly brackets {}<br>
+          When we declare a function, we are just describing how we want it to behave. To actually trigger the function, you have to invoke it.<br>
+          <br>
+                                parameter (placeholder for input)<br>
+                                  |<br>
+          function favoriteFood(food) {<br>
+            console.log("My favorite food is " + food);<br>
+          }<br>
+          <br>
+          function add(num1, num2) {<br>
+            console.log(num1 + num2);<br>
+          }<br>
+          let myNumber = 1;<br>
+          let yourNumber = 4;<br>
+          add(1, 4);<br>
+          add(myNumber, yourNumber);<br>
+        </p>
 
-          baked in functions
-          console.log()
-          parseint()
-          .toUpperCase()
-          .trim()
-          .pop()
-          
-          
-                      identifier
-          decleration   |
-             |          |
-          function logHello() {
-            console.log("Hello from a function!");
-          }            |
-                      body
-          we run the function by putting () after the name. arguments are  inserted as strings between the (). body of the function, encapsulated by curly brackets {}
-          When we declare a function, we are just describing how we want it to behave. To actually trigger the function, you have to invoke it.
-          
-                                parameter (placeholder for input)
-                                  |
-          function favoriteFood(food) {
-            console.log("My favorite food is " + food);
-          }
-          `
-          function add(num1, num2) {
-            console.log(num1 + num2);
-          }
-          let myNumber = 1;
-          let yourNumber = 4;
-          add(1, 4);
-          add(myNumber, yourNumber);
-          `````````````````````````````
-          ``return //  use it in front of the final result that you want to share outside of the function
-          as opposed to console.log(), which only shows in console and remains undefined, return allows the result to be referenced within the program
-          
-          function returnsTen() {
-            return 10;
-          }
-          let eleven = returnsTen() + 1; // becomes 10 + 1
-          console.log(eleven); // 11
-          
-          Whenever JavaScript sees return in a function, it:
-          
-          stops running the code in that function
-          takes the value to the right of return
-          swaps in the return value where the function was called
-          
-          function add(num1, num2) {
-            if (num1 < 0 || num2 < 0) {
-              return "Only positive numbers please!";
-            }
-            return num1 + num2;
-          }
-          console.log(add(1, 4));
-          console.log(add(-1, 4));
-          //You can use return in multiple places in your function and a good example of that is if you include a conditional statement inside the body.
+        <h4>Return</h4>
+        <p> use it in front of the final result that you want to share outside of the function<br>
+          as opposed to console.log(), which only shows in console and remains undefined, return allows the result to be referenced within the program<br>
+          <br>
+          function returnsTen() {<br>
+            return 10;<br>
+          }<br>
+          let eleven = returnsTen() + 1; // becomes 10 + 1<br>
+          console.log(eleven); // 11<br>
+          <br>
+          Whenever JavaScript sees return in a function, it:<br>
+          <br>
+          stops running the code in that function<br>
+          takes the value to the right of return<br>
+          swaps in the return value where the function was called<br>
+          <br>
+          function add(num1, num2) {<br>
+            if (num1 < 0 || num2 < 0) {<br>
+              return "Only positive numbers please!";<br>
+            }<br>
+            return num1 + num2;<br>
+          }<br>
+          console.log(add(1, 4));<br>
+          console.log(add(-1, 4));<br>
+          //You can use return in multiple places in your function and a good example of that is if you include a conditional statement inside the body.<br>
         </p>
       
 
@@ -569,64 +573,95 @@
       <article id = "html">
         <h3>HTML</h3>
         <p>
-          This link will automatically open the user's default email program with the TO field already filled out with the proper email address.
+          Stands for Hyper Text Markup Language<br>
+          <br>
+          < a href = "http://www.manniecut.com">Mannie Cut< /a><br>
+          The whole thing is called the element.<br>
+          href = "http://www.manniecut.com" is the attribute<br>
+          < a > < / a > are the tag(s)<br><br>
 
-          < a href="mailto:hello@yoursite.com">Email Me< /a>
-          
-          
-          
-          Auto populate the Subject field in the email program. Spaces in the subject will typically work, but to be sure, you can replace spaces with "%20".
-          
-          < a href="mailto:hello@yoursite.com?subject=Email%20Subject%20Here">Email Me< /a>
-          
-          
-          
-          Adding CC (Carbon Copy) and BCC (Blind Carbon Copy) can also be added as parameters.
-          
-          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=onelastperson@theirsite.com
-          &subject=Big%20News">Email Me< /a>
-          
-          
-          
-          
-          Providing pre-written Body Text to your email can be useful in certain situations. ("You are hired!") 😂
-          
-          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com
-          &bcc=onelastperson@theirsite.com &subject=Big%20News &body=We%20want%20to%20hire%20you!">Email Me< /a>
-          
-          To force the telephone link to make the call to the number when clicked, which is great for mobile devices, use this code.
-          
-          // HTML CODE 
-            < p>< a href="tel:555-555-5555">
-          555-555-5555< /a>< /p>
-          
-          // CSS CODE  
-            a[href^="tel:"]{
-              color: pink;
-            }
-          
-          Certain web files will open within the browser window when you link to them. These include web files (.html & .css) and images (jpg, .gif, and .png).
-          
-              < p>< a href="another-page.html">Open another 
-              HTML page in Browser< /a>< /p>
-              < p> < a href="images/chess.jpg">Open Image in
-              Browser< /a>< /p>
-              < p>< a href="style.css">Open CSS in
-              Browser< /a>< /p>
-              
+          6 headers in HTML. h1 through h6 are all valid<br>
+        </p>
+        <h4>Attributes</h4>
+        <p>
+          extra bits of information that are tied with certain elements and are always written inside the opening tag.<br>
+          <br>
+
+          They will always follow the structure of <br>
+          attribute="value"
+        </p>
+        <h4>Images</h4>
+        <p>
+          Start with < img><br>
+          src in the image code stands for source and references the online location<br>
+          width refers to the width the image will display in the page and is always set in pixels<br>
+          <br>
+          alt represents the alternative text and should be applied to every image. It is useful for a number of reasons:<br>
+          If the image link is broken, the alternative text will be displayed for the user<br>
+          The alternative text is provided to visual web readers for the blind and visually impaired<br>
+          Providing an alt value will help increase the visibility of your website by search engines like Google<br>
+          <br>
+        </p>
+
+
+
+
+          This link will automatically open the user's default email program with the TO field already filled out with the proper email address.<br>
+          <br>
+          < a href="mailto:hello@yoursite.com">Email Me< /a><br>
+          <br>
+          <br>
+          <br>
+          Auto populate the Subject field in the email program. Spaces in the subject will typically work, but to be sure, you can replace spaces with "%20".<br>
+          <br>
+          < a href="mailto:hello@yoursite.com?subject=Email%20Subject%20Here">Email Me< /a><br>
+          <br>
+          <br>
+          <br>
+          Adding CC (Carbon Copy) and BCC (Blind Carbon Copy) can also be added as parameters.<br>
+          <br>
+          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=onelastperson@theirsite.com&subject=Big%20News">Email Me< /a><br>
+          <br>
+          <br>
+          <br>
+          <br>
+          Providing pre-written Body Text to your email can be useful in certain situations. ("You are hired!") 😂<br>
+          <br>
+          < a href="mailto:hello@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=onelastperson@theirsite.com &subject=Big%20News &body=We%20want%20to%20hire%20you!">Email Me< /a><br>
+          <br>
+          To force the telephone link to make the call to the number when clicked, which is great for mobile devices, use this code.<br>
+          <br>
+          // HTML CODE <br>
+            < p>< a href="tel:555-555-5555"><br>
+          555-555-5555< /a>< /p><br>
+          <br>
+          // CSS CODE  <br>
+            a[href^="tel:"]{<br>
+              color: pink;<br>
+            }<br>
+            <br>
+          Certain web files will open within the browser window when you link to them. These include web files (.html & .css) and images (jpg, .gif, and .png).<br>
+          <br>
+              < p>< a href="another-page.html">Open another <br>
+              HTML page in Browser< /a>< /p><br>
+              < p> < a href="images/chess.jpg">Open Image in<br>
+              Browser< /a>< /p><br>
+              < p>< a href="style.css">Open CSS in<br>
+              Browser< /a>< /p><br>
+              <br>
           When non-web files (.zip, pdf, .doc) are linked, those will be downloaded to the user’s computer. If you want the link to download web files, then the attribute download can be added to the link to specify that the file should be downloaded.
-          
+          <br>
           Since all files need to follow specific filename rules which can appear messy with the hyphens, etc, the downloaded file can be auto-renamed to use a more friendly filename upon download.
-          
-          < p>Download with Original Filename: 
-          < a href="pdf-files/pdf-sample-243.pdf"
-           download>Download: Sample PDF File< /a>< /p>
-          
-          < p>Download with New Filename:
-          < a href="pdf-files/pdf-sample-243.pdf"
-          download="SamplePDF File.pdf">
-          
-          < /p>
+          <br>
+          < p>Download with Original Filename: <br>
+          < a href="pdf-files/pdf-sample-243.pdf"<br>
+           download>Download: Sample PDF File< /a>< /p><br>
+           <br>
+          < p>Download with New Filename:<br>
+          < a href="pdf-files/pdf-sample-243.pdf"<br>
+          download="SamplePDF File.pdf"><br>
+          <br>
+          < /p><br>
       </article>
 
       <article id = "css">
@@ -712,7 +747,7 @@
     </main>
 
     <footer>
-      <p>Mannie Cut's Notes 2020</p>
+      <p>Mannie Cut's<br>Notes 2020</p>
     </footer>
     </body>
 </html>

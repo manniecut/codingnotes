@@ -28,4 +28,10 @@ p {
 footer {
     background-color: #000033;
     color: #3030ff;
+    text-align: center;
+}
+
+h1, h2, h3, h4, p, footer {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
